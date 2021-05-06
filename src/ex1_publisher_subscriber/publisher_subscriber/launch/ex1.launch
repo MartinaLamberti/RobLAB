@@ -1,0 +1,4 @@
+<launch>
+<node name="sub" pkg="publisher_subscriber" type= "subscriber_node" output = "screen" />
+<node name="pub" pkg="publisher_subscriber" type= "publisher_node" output = "screen" />
+</launch>
