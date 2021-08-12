@@ -1,0 +1,31 @@
+rosservice list
+
+martinaelle@martinaelle-Aspire-E5-575G:~$ rosservice type /compute_fk
+moveit_msgs/GetPositionFK
+
+rossrv show moveit_msgs/GetPositionFK
+
+martinaelle@martinaelle-Aspire-E5-575G:~$ rosservice call /compute_fk '{header: {frame_id: base_link}, fk_link_names: [flange], robot_state: {joint_state: {name: [joint1 joint2 joint3 joint4 joint5 joint6], position: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}}'
+pose_stamped: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 0
+        nsecs:         0
+      frame_id: "base_link"
+    pose: 
+      position: 
+        x: 0.892069522473
+        y: -8.10576242903e-08
+        z: 1.17000272578
+      orientation: 
+        x: 0.707105482506
+        y: 0.0
+        z: 0.707108079859
+        w: 2.59734346717e-06
+fk_link_names: [flange]
+error_code: 
+  val: 1 // SUCCESS !!!
+
+

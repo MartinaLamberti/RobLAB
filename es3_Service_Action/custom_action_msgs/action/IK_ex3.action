@@ -1,0 +1,8 @@
+#goal     //modificato da client    La richiesta deve contenere posizione e orientamento di end-eff, così da ottenere la configurazione dei giunti
+geometry_msgs/Pose pos_quaternion_endeff
+---
+#result   //campo del server che contiene tutte le configurazioni trovate dei giunti
+sensor_msgs/JointState[] all_conf_joints
+---
+#feedback  //campo del server Il server restituisce una per volta 
+sensor_msgs/JointState joints

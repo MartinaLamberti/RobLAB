@@ -1,0 +1,1 @@
+In this folder, you can find two ROS package in which you can see the package for the msgs and, on the other hand, the package for the communication between client and server.
