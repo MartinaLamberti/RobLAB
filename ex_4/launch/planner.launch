@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find smartsix_moveit_config)/launch/demo.launch" />
+
+    <node pkg="ex_4" type="ex_4" name="circle_traj_planner" output="screen" />  <!--rosrun ex_4 ex_4 -->
+
+    <node pkg="rqt_multiplot" type="rqt_multiplot" name="rqt_multiplot"/>
+
+</launch>
